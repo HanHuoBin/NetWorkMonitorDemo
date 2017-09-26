@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Welcome">#048ad0</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- action背景 -->
+    <color name="action_color">#ffffff</color>
+    <color name="action_color_blue">#048ad0</color>
+    <color name="action_color_alpha">#99ffffff</color>
+    <color name="action_color_blue_alpha">#9955a8fd</color>
+    <color name="btn_white">#FFFFFF</color>
+    <color name="btn_white_alpha">#66FFFFFF</color>
+    <color name="action_bg_gray">#f7f7f7</color>
+    <color name="action_bg_gray_alpha">#88f7f7f7</color>
+    <color name="gray_hint">#6655a8fd</color>
+    <color name="gray_interest">#B3B3B3</color>
+    <color name="gray_content">#999999</color>
+    <!-- 页面背景 -->
+    <color name="page_bg">#f2f2f2</color>
+    <!-- 页面背景 -->
+    <color name="gray_alp">#33000000</color>
+    <!-- 进度条绿色 -->
+    <color name="progress_green">#97d15c</color>
+    <color name="gray_alpha">#66000000</color>
+
+    <!-- 灰 -->
+    <color name="gray_btn">#e6e6e6</color>
+    <!-- 灰-线 -->
+    <color name="gray_line">#dddddd</color>
+    <!-- 灰-线 -->
+    <color name="gray_bg">#f0eff4</color>
+    <color name="red_txt">#ff6e6e</color>
+    <color name="line">#E5E5E5</color>
+    <color name="white1">#00ffffff</color>
+    <color name="white_found">#66ffffff</color>
+    <color name="green_radio_normal">#689869</color>
+
+    <color name="session_title">#222222</color>
+    <color name="session_time">#b8b8b8</color>
+    <color name="session_divider">#d9d9d9</color>
+    <color name="session_through_content">#888888</color>
+    <color name="session_draft">#ff6666</color>
+    <color name="chatting_item_divider_bg">#ebebeb</color>
+    <color name="text_color_gray">#ABABAB</color>
+    <color name="unread_tv_color">#007aff</color>
+    <color name="chat_link_color">#2fa9ff</color>
+    <color name="chat_msg_title">#545759</color>
+    <color name="chat_text_color">#222222</color>
+    <color name="login_divider_pwd">#bacfd9</color>
+    <color name="btn_normal">#0066cc</color>
+    <color name="btn_disable">#99c2eb</color>
+    <color name="choose_btn_disable">#b6d9f1</color>
+    <color name="btn_pressed">#1a5992</color>
+    <color name="hint_text_color_login_pwd">#a7b4b8</color>
+    <color name="login_divider">#a9a9a9</color>
+    <color name="text_color_light_gray">#777777</color>
+    <color name="text_color_dark">#222222</color>
+    <color name="border">#d9d9d9</color>
+    <color name="tips_bg">#2aa3e9</color>
+    <color name="session_content">#545759</color>
+    <color name="chat_input_editTextHintColor">#ebebeb</color>
+    <color name="chat_send_button_disabled">#949495</color>
+    <color name="chat_send_button_enabled">#2fa9ff</color>
+    <color name="text_color_tab">#03A9f4</color>
+    <!--popup_menu color-->
+    <color name="transparent_background_button">#11000000</color>
+    <color name="transparent_background">#ffffff</color>
+    <!--tab layout color-->
+    <color name="tab_un_selected">#818181</color>
+    <color name="refuse_btn">#f37700</color>
+
+    <!--listview 删除按钮背景色-->
+    <color name="sign_red">#f93c37</color>
+    <color name="sign_cancel">#d9d9d9</color>
+    <!--dialog 取消颜色-->
+    <color name="dialog_cancel">#7e7e7e</color>
+
+    <color name="backgroundCard">#FFF5F5F5</color>
+    <color name="textColorBg">#eee</color>
+    <color name="textColor">#757575</color>
+    <color name="image_bg">#49A8FC</color>
+    <color name="action_text_color">#00ff00</color>
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+</resources>
