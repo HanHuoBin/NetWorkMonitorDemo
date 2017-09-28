@@ -1,6 +1,8 @@
 # 本地网络变化检测
 
-<iframe height=600 width=360 src="file/network.gif">
+<img src="file/network.gif" width="360" height="640" alt=""/>
+
+<img src="file/network1.gif" width="360" height="640" alt=""/>
 
 ## 编写判断网络帮助类 NetUtil
 
