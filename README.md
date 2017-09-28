@@ -1,5 +1,7 @@
 # 本地网络变化检测
 
+<iframe height=600 width=360 src="file/network.gif">
+
 ## 编写判断网络帮助类 NetUtil
 
 ```

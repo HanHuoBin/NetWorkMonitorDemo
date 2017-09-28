@@ -19,24 +19,24 @@ import com.hb.network.R;
 
 
 public class MyAlertDialog {
-    private Context      context;
-    private Dialog       dialog;
+    private Context context;
+    private Dialog dialog;
     private LinearLayout lLayout_bg;
-    private TextView     txt_title;
-    private TextView     txt_msg;
-    private EditText     edittxt_result;
+    private TextView txt_title;
+    private TextView txt_msg;
+    private EditText edittxt_result;
     private LinearLayout dialog_Group;
-    private ImageView    dialog_marBottom;
-    private Button       btn_neg;
-    private Button       btn_pos;
-    private ImageView    img_line;
-    private Display      display;
-    private boolean      showTitle    = false;
-    private boolean      showMsg      = false;
-    private boolean      showEditText = false;
-    private boolean      showLayout   = false;
-    private boolean      showPosBtn   = false;
-    private boolean      showNegBtn   = false;
+    private ImageView dialog_marBottom;
+    private Button btn_neg;
+    private Button btn_pos;
+    private ImageView img_line;
+    private Display display;
+    private boolean showTitle = false;
+    private boolean showMsg = false;
+    private boolean showEditText = false;
+    private boolean showLayout = false;
+    private boolean showPosBtn = false;
+    private boolean showNegBtn = false;
 
     public MyAlertDialog(Context context) {
         this.context = context;
@@ -231,8 +231,9 @@ public class MyAlertDialog {
     }
 
     public void dismiss() {
-        if (dialog != null) {
+        if (dialog != null && dialog.isShowing()) {
             dialog.dismiss();
         }
+        dialog = null;
     }
 }

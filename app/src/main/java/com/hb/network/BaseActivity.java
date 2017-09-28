@@ -68,12 +68,12 @@ public abstract class BaseActivity
     /**
      * 初始化时判断有没有网络
      */
-
     public boolean checkNet() {
         this.netType = NetUtil.getNetWorkState(BaseActivity.this);
         if (!isNetConnect()) {
             //网络异常，请检查网络
-            T.showShort("网络异常，请检查网络111");
+            showNetDialog();
+            T.showShort("网络异常，请检查网络，哈哈");
         }
         return isNetConnect();
     }
@@ -88,7 +88,7 @@ public abstract class BaseActivity
         Log.i("netType", "netType:" + netMobile);
         if (!isNetConnect()) {
             showNetDialog();
-            T.showShort("网络异常，请检查网络");
+            T.showShort("网络异常，请检查网络，哈哈");
         } else {
             hideNetDialog();
             T.showShort("网络恢复正常");
@@ -102,6 +102,7 @@ public abstract class BaseActivity
         if (alertDialog != null) {
             alertDialog.dismiss();
         }
+        alertDialog = null;
     }
 
     /**
