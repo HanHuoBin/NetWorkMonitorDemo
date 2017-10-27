@@ -6,11 +6,14 @@ import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hb.network.dialog.MyAlertDialog;
@@ -23,13 +26,14 @@ import java.util.Date;
  * Created by hb on 16/3/29.
  */
 public abstract class BaseActivity
-        extends FragmentActivity implements NetBroadcastReceiver.NetChangeListener {
+        extends AppCompatActivity implements NetBroadcastReceiver.NetChangeListener {
     //双击退出
     private long mLastBackTime = 0;
     private long TIME_DIFF = 2 * 1000;
 
     public static NetBroadcastReceiver.NetChangeListener listener;
     private MyAlertDialog alertDialog = null;
+    private Toolbar mToolbar;
 
     /**
      * 网络类型
@@ -63,6 +67,33 @@ public abstract class BaseActivity
         checkNet();
         initView();
         initData();
+    }
+
+    public void initToolBar() {
+        mToolbar = findView(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+    }
+
+    public void setTooBarBackBtn() {
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+
+    /**
+     * 设置导航栏标题
+     *
+     * @param title
+     */
+    protected final void setActionTitle(String title) {
+        TextView titleTv = findView(R.id.tv_action_title);
+        if (titleTv != null && !TextUtils.isEmpty(title)) {
+            titleTv.setText(title);
+        }
     }
 
     /**

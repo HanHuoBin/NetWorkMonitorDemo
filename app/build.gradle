@@ -3,20 +3,107 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
+
+
     defaultConfig {
-        applicationId "com.hb.network"
+//        applicationId "com.hb.network"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
+
+    //厂商
+    String firm = ""
+    //环境
+    String environment = "product"
+    productFlavors {
+        //苹果厂商
+        apple {
+            firm = "apple"
+            environment = "product"
+            //根据厂商获取对应对应厂商下的配置文件
+            Properties properties = new Properties()
+            properties.load(project.rootProject.file(firm + ".properties").newReader())
+            //环境 product
+            String pack = properties.getProperty("pack", environment)
+            //动态配置的参数
+            applicationId "com.hb." + properties.getProperty("packagename." + pack)//动态配置包名
+            //配置注册文件中的动态变量
+            manifestPlaceholders = [
+                    APP_ICON: properties.getProperty("appicon." + pack),
+            ]
+            // 动态创建在BuildConfig中的参数
+            buildConfigField "int", "LOGO", properties.getProperty("logo." + pack)
+            buildConfigField "String", "WEB_URL", properties.getProperty("webUrl." + pack)
+            buildConfigField "String", "APP_NAME", properties.getProperty("appname." + pack)
+            // 动态创建资源文件
+            // 动态创建app名称，String.xml中的app_name需要去掉
+            resValue "string", "app_name", properties.getProperty("appsname." + pack)
+            // 动态创建app主题色，colors.xml中的action_color需要去掉
+            resValue "color", "action_color", properties.getProperty("actioncolor." + pack)
+        }
+        //香蕉厂商
+        banana {
+            firm = "banana"
+            environment = "product"
+            //根据厂商获取对应对应厂商下的配置文件
+            Properties properties = new Properties()
+            properties.load(project.rootProject.file(firm + ".properties").newReader())
+            //环境 product
+            String pack = properties.getProperty("pack", environment)
+            //动态配置的参数
+            applicationId "com.hb." + properties.getProperty("packagename." + pack)//动态配置包名
+            //配置注册文件中的动态变量
+            manifestPlaceholders = [
+                    APP_ICON: properties.getProperty("appicon." + pack),
+            ]
+            // 动态创建在BuildConfig中的参数
+            buildConfigField "int", "LOGO", properties.getProperty("logo." + pack)
+            buildConfigField "String", "WEB_URL", properties.getProperty("webUrl." + pack)
+            buildConfigField "String", "APP_NAME", properties.getProperty("appname." + pack)
+            // 动态创建资源文件
+            // 动态创建app名称，String.xml中的app_name需要去掉
+            resValue "string", "app_name", properties.getProperty("appsname." + pack)
+            // 动态创建app主题色，colors.xml中的action_color需要去掉
+            resValue "color", "action_color", properties.getProperty("actioncolor." + pack)
+        }
+        //橙子厂商
+        orange {
+            firm = "orange"
+            environment = "product"
+            //根据厂商获取对应对应厂商下的配置文件
+            Properties properties = new Properties()
+            properties.load(project.rootProject.file(firm + ".properties").newReader())
+            //环境 product
+            String pack = properties.getProperty("pack", environment)
+            //动态配置的参数
+            applicationId "com.hb." + properties.getProperty("packagename." + pack)//动态配置包名
+            //配置注册文件中的动态变量
+            manifestPlaceholders = [
+                    APP_ICON: properties.getProperty("appicon." + pack),
+            ]
+            // 动态创建在BuildConfig中的参数
+            buildConfigField "int", "LOGO", properties.getProperty("logo." + pack)
+            buildConfigField "String", "WEB_URL", properties.getProperty("webUrl." + pack)
+            buildConfigField "String", "APP_NAME", properties.getProperty("appname." + pack)
+            // 动态创建资源文件
+            // 动态创建app名称，String.xml中的app_name需要去掉
+            resValue "string", "app_name", properties.getProperty("appsname." + pack)
+            // 动态创建app主题色，colors.xml中的action_color需要去掉
+            resValue "color", "action_color", properties.getProperty("actioncolor." + pack)
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
 }
 
 dependencies {

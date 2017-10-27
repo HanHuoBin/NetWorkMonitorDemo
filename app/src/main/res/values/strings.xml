@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">NetWorkMonitorDemo</string>
+    <!--<string name="app_name">NetWorkMonitorDemo</string>-->
+    <string name="app_apple_name">苹果APP</string>
+    <string name="app_banana_name">香蕉APP</string>
+    <string name="app_orange_name">橙子APP</string>
+    <string name="version">Version</string>
+    <string name="main">首页</string>
 </resources>
