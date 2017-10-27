@@ -1,0 +1,1 @@
+# gradle多厂商配置，动态配置icon，appname，主题色等等，一次性搞定

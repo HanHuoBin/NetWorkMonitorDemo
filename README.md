@@ -1,3 +1,9 @@
+# NetWorkMonitorDemo
+
+[本地网络变化检测](#本地网络变化检测)
+
+[gradle多厂商配置，动态配置icon，appname，主题色等等，一次性搞定](doc/gradle.md#gradle多厂商配置，动态配置icon，appname，主题色等等，一次性搞定)
+
 # 本地网络变化检测
 
 <img src="file/network.gif" width="360" height="640" alt=""/>
