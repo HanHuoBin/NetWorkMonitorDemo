@@ -1,0 +1,41 @@
+
+{
+	"buildFiles" : 
+	[
+		"/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/src/main/jni/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/Users/xcvu/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/.externalNativeBuild/cmake/appleDebug/x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"test-lib-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "test-lib",
+			"buildCommand" : "/Users/xcvu/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/.externalNativeBuild/cmake/appleDebug/x86 --target test-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android --gcc-toolchain=/Users/xcvu/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/xcvu/Library/Android/sdk/ndk-bundle/sysroot  -Dtest_lib_EXPORTS -I/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/src/main/jni/src/main/jni -isystem /Users/xcvu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/xcvu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/x86/include -isystem /Users/xcvu/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/xcvu/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/src/main/jni/test.cpp",
+					"workingDirectory" : "/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/.externalNativeBuild/cmake/appleDebug/x86"
+				}
+			],
+			"output" : "/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/build/intermediates/cmake/apple/debug/obj/x86/libtest-lib.so",
+			"toolchain" : "7401268779220821514"
+		}
+	},
+	"toolchains" : 
+	{
+		"7401268779220821514" : 
+		{
+			"cCompilerExecutable" : "/Users/xcvu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/Users/xcvu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+		}
+	}
+}

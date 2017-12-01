@@ -1,0 +1,3 @@
+/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/.externalNativeBuild/cmake/appleRelease/armeabi/CMakeFiles/edit_cache.dir
+/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/.externalNativeBuild/cmake/appleRelease/armeabi/CMakeFiles/rebuild_cache.dir
+/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/.externalNativeBuild/cmake/appleRelease/armeabi/CMakeFiles/test-lib.dir

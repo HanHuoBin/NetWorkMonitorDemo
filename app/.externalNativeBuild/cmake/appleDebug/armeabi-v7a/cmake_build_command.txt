@@ -1,0 +1,17 @@
+Executable : /Users/xcvu/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/src/main/jni
+-B/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/.externalNativeBuild/cmake/appleDebug/armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-15
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/build/intermediates/cmake/apple/debug/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=/Users/xcvu/Library/Android/sdk/ndk-bundle
+-DCMAKE_C_FLAGS=
+-DCMAKE_CXX_FLAGS=
+-DCMAKE_TOOLCHAIN_FILE=/Users/xcvu/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/xcvu/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+-DANDROID_TOOLCHAIN=clang
+jvmArgs : 
+

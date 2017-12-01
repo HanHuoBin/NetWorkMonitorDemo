@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion '26.0.2'
 
 
     defaultConfig {
@@ -12,6 +12,7 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+
     }
 
     //厂商
@@ -103,7 +104,6 @@ android {
         }
     }
 
-
 }
 
 dependencies {
@@ -113,5 +113,7 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    //ButterKnife
+    compile 'com.jakewharton:butterknife:7.0.1'
     testCompile 'junit:junit:4.12'
 }

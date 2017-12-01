@@ -2,6 +2,8 @@ package com.hb.network;
 
 import android.app.Application;
 
+import com.hb.network.utils.T;
+
 /**
  * Created by hanbin on 2017/9/14.
  */

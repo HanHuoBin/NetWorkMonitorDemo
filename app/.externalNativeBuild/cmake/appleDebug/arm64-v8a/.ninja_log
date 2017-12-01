@@ -1,0 +1,5 @@
+# ninja log v5
+0	177	0	CMakeFiles/test-lib.dir/test.cpp.o	e2cc826bc5b3ed77
+177	223	0	/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/build/intermediates/cmake/apple/debug/obj/arm64-v8a/libtest-lib.so	7f8fdd7d2ab78882
+0	357	0	CMakeFiles/test-lib.dir/test.cpp.o	e2cc826bc5b3ed77
+357	472	0	/Users/xcvu/Documents/androidprojects/NetWorkMonitorDemo/app/build/intermediates/cmake/apple/debug/obj/arm64-v8a/libtest-lib.so	7f8fdd7d2ab78882
