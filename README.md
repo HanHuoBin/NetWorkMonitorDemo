@@ -7,14 +7,14 @@
 
 ## 目录结构
 
-    |-- activity                        布局
-    |-- utils                            各种帮助类
-    | |-- iconfont                   iconfont帮助类
+    |-- activity                布局
+    |-- utils                   各种帮助类
+    | |-- iconfont              iconfont帮助类
     | | |-- MDFontsUtils        帮助类
-    | | |-- MDFont                  图标对应代码常量
-    | |-- network                   网络变化监听
-    | |-- PackageUtils           包信息帮助类
-    | |-- T                              Toast统一管理类
-    |-- widget                       dialog、自定义控件等View相关
-    |-- App                           Application
+    | | |-- MDFont              图标对应代码常量
+    | |-- network               网络变化监听
+    | |-- PackageUtils          包信息帮助类
+    | |-- T                     Toast统一管理类
+    |-- widget                  dialog、自定义控件等View相关
+    |-- App                     Application
 
